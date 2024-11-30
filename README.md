@@ -1,6 +1,6 @@
 # Assets Management
 
-#### Video Demo: [<URL HERE>](<URL HERE>)
+#### Video Demo: [<https://youtu.be/VErhtEtI-RM>](<https://youtu.be/VErhtEtI-RM>)
 
 #### Description:
 The **Assets Management** system allows users to manage various assets, such as office furniture and equipment, in a database. The system includes the following key features:
