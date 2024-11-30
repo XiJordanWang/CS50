@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Asset</title>
+    <link href="../static/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div class="assets">
+            <h1>Add Asset</h1>
+            <form action="/add" method="post">
+                <label for="asset_name">Asset Name</label>
+                <input type="text" id="asset_name" name="asset_name" required><br><br>
+
+                <label for="asset_category">Category</label>
+                <input type="text" id="asset_category" name="asset_category" required><br><br>
+
+                <label for="asset_value">Value</label>
+                <input type="number" id="asset_value" name="asset_value" required><br><br>
+
+                <button type="submit">Add Asset</button>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>

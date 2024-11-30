@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assets</title>
+    <link href="../static/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div class="assets">
+            <h1>Asset Management</h1>
+            <button id="addAssetButton" onclick="window.location.href='/add';">Add Asset</button>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Asset ID</th>
+                        <th>Asset Name</th>
+                        <th>Category</th>
+                        <th>Value</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for asset in assets %}
+                    <tr>
+                        <td>{{ asset.asset_id }}</td>
+                        <td>{{ asset.asset_name }}</td>
+                        <td>{{ asset.category }}</td>
+                        <td>{{ asset.value }}</td>
+                        <td>
+                            <form action=" {{ url_for('delete_asset', asset_id=asset.asset_id) }}" method="POST">
+                                <button type="submit" class="deleteButton">Delete</button>
+                            </form>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+
+</html>

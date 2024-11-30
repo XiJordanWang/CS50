@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'BMWTypeNext';
+    src: url('BMWTypeNextLatin-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Body and background image */
+body {
+    font-family: 'BMWTypeNext', sans-serif;
+    background-image: url(https://www.bmw.com/content/dam/bmw/marketBMWCOM/bmw_com/categories/freude/notes/n-07-media-hd.jpg);
+    background-size: cover; /* Ensures the image covers the entire viewport */
+    background-position: center center; /* Centers the background image */
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+/* Login form container */
+.login {
+    background-color: white; /* White background for the login box */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.assets{
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%; /* Adjusts the width to 80% of the viewport width */
+    max-width: 1200px; /* Optional: Prevents the container from becoming too wide on large screens */
+    text-align: center;
+    margin-left: auto;  /* Centers the container by adding automatic left margin */
+    margin-right: auto; /* Centers the container by adding automatic right margin */
+}
+
+/* Input and label styles */
+.input-container {
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%; /* Ensure the table takes up the full width of its container */
+    border-collapse: collapse;
+    margin-top: 20px;
+    table-layout: fixed; /* Ensures cells' width is determined by their content */
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    word-wrap: break-word; /* Ensure content breaks properly */
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.deleteButton {
+    background-color: #e74c3c; /* Red background for delete */
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.deleteButton:hover {
+    background-color: #c0392b; /* Darker red on hover */
+}
